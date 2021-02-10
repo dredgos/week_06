@@ -6,7 +6,7 @@ class Validator
 {
     public function email($email) 
     {
-        return preg_match("/^\S+@{1}\S+\.\S+/", $email) === 1; 
+        return filter_var($email, FILTER_VALIDATE_EMAIL) === $email; 
     }
 
     public function postcode($postcode)
