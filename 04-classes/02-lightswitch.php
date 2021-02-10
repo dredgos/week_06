@@ -2,7 +2,7 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
-class lightSwitch
+class LightSwitch
 {
     private $lightOn = false;
 
